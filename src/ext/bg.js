@@ -297,4 +297,6 @@ async function disableCSPForTab(tabId) {
 // ===========================================================================
 chrome.runtime.onInstalled.addListener(main);
 
-importScripts("sw.js");
+if (self.importScripts) {
+  self.importScripts("sw.js");
+}

@@ -108,7 +108,7 @@ const electronPreloadConfig = (/*env, argv*/) => {
 
 
 // ===========================================================================
-function sharedBuild(outputPath, {plugins = [], copy = [], entry = {}, extra = {}, flat = false} = {}) {
+function sharedBuild(outputPath, {plugins = [], copy = [], entry = {}, extra = {}} = {}) {
   if (copy.length) {
     plugins.push(new CopyPlugin({patterns: copy}));
   }
@@ -182,7 +182,7 @@ const extensionWebConfig = (env, argv) => {
 
   const entry = {
     "bg": "./src/ext/bg.js",
-    "popup": "./src/popup.js",
+    "popup": "./src/popup.js"
   };
 
   return sharedBuild(DIST_EXT, {plugins, copy, entry});
