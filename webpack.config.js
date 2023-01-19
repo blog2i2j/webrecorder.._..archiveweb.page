@@ -125,21 +125,7 @@ function sharedBuild(outputPath, {plugins = [], copy = [], entry = {}, extra = {
     //resolve: {fallback},
     output: {
       path: outputPath,
-      filename: (chunkData) => {
-        const name = "[name].js";
-        const replayName = "./replay/" + name;
-
-        switch (chunkData.chunk.name) {
-        case "ui":
-          return flat ? name : replayName;
-
-        case "sw":
-          return replayName;
-
-        default:
-          return name;
-        }
-      },
+      filename: "[name].js",
       libraryTarget: "global",
       globalObject: "self"
     },
@@ -196,7 +182,7 @@ const extensionWebConfig = (env, argv) => {
 
   const entry = {
     "bg": "./src/ext/bg.js",
-    "popup": "./src/popup.js"
+    "popup": "./src/popup.js",
   };
 
   return sharedBuild(DIST_EXT, {plugins, copy, entry});

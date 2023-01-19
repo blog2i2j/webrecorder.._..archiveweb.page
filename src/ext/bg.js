@@ -178,7 +178,7 @@ chrome.tabs.onRemoved.addListener((tabId) => {
 chrome.contextMenus.onClicked.addListener((info, tab) => {
   switch (info.menuItemId) {
   case "view-rec":
-    chrome.tabs.create({ url: chrome.runtime.getURL("replay/index.html") });
+    chrome.tabs.create({ url: chrome.runtime.getURL("index.html") });
     break;
 
   case "toggle-rec":
@@ -296,3 +296,5 @@ async function disableCSPForTab(tabId) {
 
 // ===========================================================================
 chrome.runtime.onInstalled.addListener(main);
+
+importScripts("sw.js");
