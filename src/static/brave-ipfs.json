@@ -8,7 +8,7 @@
         { "header": "Origin", "operation": "set", "value": "http://localhost:5001" }
       ]
     },
-    "condition": { "urlFilter": "http://localhost:5001/", "resourceTypes": ["main_frame"] }
+    "condition": { "urlFilter": "localhost:5001", "resourceTypes": ["xmlhttprequest"] }
   },
   {
     "id": 1,
@@ -19,7 +19,7 @@
         { "header": "Origin", "operation": "set", "value": "http://localhost:45001" }
       ]
     },
-    "condition": { "urlFilter": "http://localhost:45001/", "resourceTypes": ["main_frame"] }
+    "condition": { "urlFilter": "localhost:45001", "resourceTypes": ["xmlhttprequest"] }
   },
   {
     "id": 2,
@@ -30,7 +30,7 @@
         { "header": "Origin", "operation": "set", "value": "http://localhost:45002" }
       ]
     },
-    "condition": { "urlFilter": "http://localhost:45002/", "resourceTypes": ["main_frame"] }
+    "condition": { "urlFilter": "localhost:45002", "resourceTypes": ["xmlhttprequest"] }
   },
   {
     "id": 3,
@@ -41,7 +41,7 @@
         { "header": "Origin", "operation": "set", "value": "http://localhost:45003" }
       ]
     },
-    "condition": { "urlFilter": "http://localhost:45003/", "resourceTypes": ["main_frame"] }
+    "condition": { "urlFilter": "localhost:45003", "resourceTypes": ["xmlhttprequest"] }
   },
   {
     "id": 4,
@@ -52,7 +52,7 @@
         { "header": "Origin", "operation": "set", "value": "http://localhost:45004" }
       ]
     },
-    "condition": { "urlFilter": "http://localhost:45004/", "resourceTypes": ["main_frame"] }
+    "condition": { "urlFilter": "localhost:45004", "resourceTypes": ["xmlhttprequest"] }
   },
   {
     "id": 5,
@@ -63,6 +63,6 @@
         { "header": "Origin", "operation": "set", "value": "http://localhost:45005" }
       ]
     },
-    "condition": { "urlFilter": "http://localhost:45005/", "resourceTypes": ["main_frame"] }
+    "condition": { "urlFilter": "localhost:45005", "resourceTypes": ["xmlhttprequest"] }
   }
 ]
