@@ -108,7 +108,7 @@ class RecPopup extends LitElement
       if (tabs.length) {
         this.tabId = tabs[0].id;
         this.pageUrl = tabs[0].url;
-        chrome.browserAction.getTitle({tabId: this.tabId}, (result) => {
+        chrome.action.getTitle({tabId: this.tabId}, (result) => {
           this.recording = (result.indexOf("Recording:") >= 0);
         });
 

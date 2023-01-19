@@ -7,6 +7,8 @@ import RWP_INDEX_HTML from "replaywebpage/index.html";
 
 import { WorkerLoader } from "@webrecorder/wabac/src/loaders";
 
+import "../ext/bg";
+
 if (self.registration) {
   const defaultConfig = {
     injectScripts: ["/ruffle/ruffle.js"],

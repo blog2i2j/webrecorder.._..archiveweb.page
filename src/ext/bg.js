@@ -27,7 +27,7 @@ const disabledCSPTabs = new Set();
 // ===========================================================================
 
 function main() {
-  chrome.browserAction.setBadgeBackgroundColor({color: "#64e986"});
+  chrome.action.setBadgeBackgroundColor({color: "#64e986"});
 
   chrome.contextMenus.create({"id": "toggle-rec", "title": "Start Recording", "contexts": ["browser_action"]});
   chrome.contextMenus.create({"id": "view-rec", "title": "View Web Archives", "contexts": ["all"]});
